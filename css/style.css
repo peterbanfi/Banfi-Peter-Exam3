@@ -1,0 +1,97 @@
+body {
+    overflow-x: 0;
+}
+
+#firstSec {
+    background: url('/img/bg-pattern.png') repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+#firstSec * {
+    z-index: 1000;
+    color: white;
+}
+
+#firstSec::after {
+    content: "";
+    display: table;
+    clear: both;
+    background: linear-gradient(440deg, rgba(194, 0, 0, 0.925), rgba(156, 0, 148, 0.884));
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+}
+
+#secDiscover img {
+    width: 135px;
+}
+
+#secDiscover {
+    background: rgb(252, 185, 1);
+    padding: 150px;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.newAge {
+    padding: 80px;
+}
+
+.newAgePhone {
+    padding: 80px;
+}
+
+.newAgePhone img {
+    width: 50%;
+    border-radius: 30px;
+    box-shadow: 0 0 20px white;
+}
+
+#startBtn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid white;
+    transition: background 300ms;
+}
+
+#startBtn:hover {
+    background: #fdcc52;
+}
+
+#firstSec .brandBtn p {
+    color: rgb(252, 185, 1);
+}
+
+#firstSec .brandBtn p:hover {
+    color: rgb(255, 255, 255);
+}
+
+#firstSec .nav>li>a:hover {
+    background: transparent;
+}
+
+#firstSec .fix {
+    /*  position: fixed;
+    top: 0;
+    z-index: 1030; */
+}
+
+#secDiscover h1 {}
+
+#unlimited p {
+    border-bottom: 1px solid slategrey;
+}
+
+.unlimitedPhone {
+    width: 50%;
+    border-radius: 30px;
+    box-shadow: 0 0 20px white;
+}
